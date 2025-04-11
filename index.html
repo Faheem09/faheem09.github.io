@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GeminiWave</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      font-size: calc(16px + 1vw);
+      padding: 2rem;
+      transition: background 0.3s ease;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: transform 0.2s;
+    }
+
+    nav a:hover {
+      transform: scale(1.1);
+    }
+
+    #home { background: url('https://source.unsplash.com/1600x900/?stars,space') center/cover no-repeat; }
+    #about { background: url('https://source.unsplash.com/1600x900/?city,light') center/cover no-repeat; }
+    #church { background: url('https://source.unsplash.com/1600x900/?church,faith') center/cover no-repeat; }
+    #consulting { background: url('https://source.unsplash.com/1600x900/?technology,meeting') center/cover no-repeat; }
+    #projects { background: url('https://source.unsplash.com/1600x900/?robotics,ai') center/cover no-repeat; }
+    #contact { background: url('https://source.unsplash.com/1600x900/?connection,network') center/cover no-repeat; }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 2rem;
+      border-radius: 1rem;
+      max-width: 800px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#church">Cafe Talks</a>
+    <a href="#consulting">Consulting</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <div class="overlay">
+      <h1>Welcome to GeminiWave</h1>
+      <p>Faith, Technology & Community Impact</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="overlay">
+      <h2>About Me</h2>
+      <p>Engineer. Mentor. Visionary. Helping people grow spiritually and professionally.</p>
+    </div>
+  </section>
+
+  <section id="church">
+    <div class="overlay">
+      <h2>Cafe Talks & Church Service</h2>
+      <p>Building spiritual strength through youth talks, food drives, and community service.</p>
+    </div>
+  </section>
+
+  <section id="consulting">
+    <div class="overlay">
+      <h2>Consulting & Career Coaching</h2>
+      <p>Guiding startups, professionals, and immigrants through the world of technology and entrepreneurship.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="overlay">
+      <h2>Showcase Projects</h2>
+      <p>Small generative AI demos, diagnostics, MVPs, and real estate innovations — all in one place.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="overlay">
+      <h2>Get in Touch</h2>
+      <p>Email: ffaheem@gmail.com</p>
+      <p><a href="https://github.com/faheem09" style="color:lightblue">Visit my GitHub</a></p>
+    </div>
+  </section>
+</body>
+</html>
