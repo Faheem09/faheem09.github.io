@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +5,123 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>GeminiWave - Dr. Faheem Faheem</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+    }
+    nav {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    section {
+      padding: 2rem;
+      transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .project-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .project-card {
+      background: #f9f9f9;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 1rem;
+      flex: 1 1 calc(33% - 2rem);
+      box-sizing: border-box;
+    }
+    .project-card h3 {
+      margin-top: 0;
+    }
+    .project-card a {
+      display: inline-block;
+      margin-top: 1rem;
+      text-decoration: none;
+      color: #007BFF;
+    }
+    .cta-button {
+      background-color: #007BFF;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .cta-button:hover {
+      background-color: #0056b3;
+    }
+    footer {
+      background-color: #f2f2f2;
+      padding: 1rem;
+      text-align: center;
+    }
+    footer a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Dark Theme */
+    .dark-theme {
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+    .dark-theme nav,
+    .dark-theme footer {
+      background-color: #1f1f1f;
+    }
+    .dark-theme .project-card {
+      background: #1f1f1f;
+      border: 1px solid #333;
+    }
+    .dark-theme .project-card a {
+      color: #BB86FC;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav a {
+        display: block;
+        margin: 0.75rem 0;
+      }
+      .project-list {
+        flex-direction: column;
+        align-items: center;
+      }
+      .project-card {
+        width: 90%;
+      }
+      section {
+        padding: 3rem 1rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      .tagline {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <nav>
@@ -15,50 +131,106 @@
     <a href="#projects">Projects</a>
     <a href="#booking">Book</a>
     <a href="#contact">Contact</a>
+    <button onclick="toggleTheme()" style="float:right; margin-left: 1rem;">🌗</button>
   </nav>
 
-  <section id="home">
-    <h1>Empowering Innovation through Engineering, AI & Faith</h1>
-    <p>Consulting. Mentorship. Product Strategy.</p>
+  <section id="home" class="fade-in">
+    <h1>Building AI Solutions That Work</h1>
+    <p class="tagline">From real-world consulting to mobile-ready AI apps — tailored for small business success.</p>
+    <a href="#projects" class="cta-button">Explore My Work</a>
   </section>
 
-  <section id="about">
+  <section id="about" class="fade-in">
     <h2>About Dr. Faheem Faheem</h2>
-    <p>25+ years in mechanical engineering, medical robotics, and product development. Former WPI adjunct professor. AI entrepreneur and real estate strategist. Mentor in faith-based communities. Faheem has a strong background in engineering, with advanced degrees from the University of Colorado, MIT, and Harvard, and specialized training in neuroscience from Duke. He’s spent over two decades designing cutting-edge technologies — from MEMS sensors and wearable health devices to AI-powered systems.
-
-What makes Faheem stand out isn’t just the depth of his education — it’s how he brings that knowledge into real-world solutions. He’s taken tools once built for Air Force pilots and high-end medical systems and is now applying them to help small businesses thrive — like tracking the health of livestock using smart sensors, or automating a coffee shop’s operations using AI.
-
-He’s passionate about using the latest technology — like generative AI and agent-based automation — to build custom solutions quickly, affordably, and with real business impact. Whether it’s a café app, vineyard monitoring, or customer engagement, Faheem focuses on helping owners scale what they do best — and reach the customers they’re currently missing.</p>
+    <p>
+      With 25+ years in mechanical engineering, medical robotics, and product development, I'm a former WPI adjunct professor, AI entrepreneur, and real estate strategist. I’ve earned degrees from the University of Colorado, MIT, and Harvard, and completed neuroscience training at Duke.
+    </p>
+    <p>
+      My work spans MEMS sensors, wearable health devices, and AI-powered systems. I specialize in bringing elite tech — once reserved for the Air Force or hospitals — into everyday business. Whether it's automating a coffee shop or tracking livestock health, I focus on solving problems fast and affordably.
+    </p>
+    <p>
+      Today, I’m using generative AI and agent-based automation to help small businesses scale, automate, and engage the customers they’re currently missing.
+    </p>
   </section>
 
-  <section id="services">
+  <section id="services" class="fade-in">
     <h2>Consulting Services</h2>
     <ul>
-      <li>AI Product Strategy & MVP Development</li>
-      <li>Medical Device Design: FEA/CFD, Validation</li>
-      <li>Real Estate Portfolio Building & Automation</li>
-      <li>Startup Mentorship & Faith-Based Empowerment</li>
+      <li>🧠 AI Product Strategy & MVP Development</li>
+      <li>🛠️ Medical Device Design: FEA, CFD, & V&V</li>
+      <li>🏘️ Real Estate Portfolio Optimization & Automation</li>
+      <li>🕊️ Startup Mentorship & Faith-Based Empowerment</li>
     </ul>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="fade-in">
     <h2>Featured Projects</h2>
-    <ul>
-      <li><a href="https://www.geminiwave.com/apps/blueheeler/">☕ Blue Heeler Coffee App</a></li>
-      <li><a href="https://www.geminiwave.com/apps/medremind/">💊 Medication Reminder App</a></li>
-      <li><a href="https://github.com/faheem09">📁 AI Diagnostic Tool & CFD Simulations</a></li>
-    </ul>
+    <div class="project-list">
+      <div class="project-card">
+        <h3>☕ Blue Heeler Coffee App</h3>
+        <p>Ordering, loyalty, and POS integration for a North Carolina café.</p>
+        <a href="https://www.geminiwave.com/apps/blueheeler/">View App →</a>
+      </div>
+      <div class="project-card">
+        <h3>💊 Medication Reminder App</h3>
+        <p>iOS app with multilingual voice prompts, caregiver alerts, and logs.</p>
+        <a href="https://www.geminiwave.com/apps/medremind/">View App →</a>
+      </div>
+      <div class="project-card">
+        <h3>📁 AI Diagnostic Tool</h3>
+        <p>Image analysis + CFD simulations for early disease detection.</p>
+        <a href="https://github.com/faheem09">GitHub Repo →</a>
+      </div>
+    </div>
   </section>
 
-  <section id="booking">
+  <section id="booking" class="fade-in">
     <h2>Book a Consultation</h2>
-    <iframe src="https://calendly.com/ffaheem/30min" width="100%" height="630" frameborder="0"></iframe>
+    <p>Let’s explore how we can collaborate. Choose a time that works for you:</p>
+    <iframe src="https://calendly.com/ffaheem/30min" width="100%" height="630" frameborder="0" style="border:1px solid #ccc;"></iframe>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="fade-in">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:ffaheem@gmail.com">ffaheem@gmail.com</a></p>
-    <p><a href="https://www.linkedin.com/in/faheem09">LinkedIn</a> | <a href="https://github.com/faheem09">GitHub</a></p>
+    <p>
+      <a href="https://www.linkedin.com/in/faheem09" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/faheem09" target="_blank">GitHub</a>
+    </p>
   </section>
+
+  <footer>
+    © 2025 Faheem Faheem · GeminiWave.com | <a href="/legal/privacy-policy.html">Privacy Policy</a>
+  </footer>
+
+  <!-- Scroll Fade Script -->
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach((el) => {
+      observer.observe(el);
+    });
+  </script>
+
+  <!-- Theme Toggle Script -->
+  <script>
+    function toggleTheme() {
+      const isDark = document.body.classList.toggle('dark-theme');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    }
+
+    window.onload = () => {
+      const savedTheme = localStorage.getItem('theme') || 'light';
+      if (savedTheme === 'dark') {
+        document.body.classList.add('dark-theme');
+      }
+    };
+  </script>
 </body>
 </html>
