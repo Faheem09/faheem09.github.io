@@ -15,3 +15,13 @@ Validation: `node --check app.js`; check navigation, experience tabs and keyboar
 ## Historical engineering gallery
 
 Three unchanged embedded PNG figures are reproduced from Faheem Faheem's `High Volume Manufacturing for MEMS Packaging.pptx`, slides 20, 23, and 29. They also appear in his 2021 electronic-packaging presentation. The gallery identifies them as historical presentation figures, retains original labels, and makes no new client outcome or sole-authorship claim. Selected image/layout/master content was reviewed for confidentiality markings. Restricted sections of other decks are not included.
+
+## Product roadmaps and government R&D
+
+The `#government-rd` section presents product-roadmap planning, technical proposal support, and bounded program leadership. Prior-career background is supported by the founder’s long-form engineering résumés and his confirmation of roadmap work for companies. Career achievements are distinguished from GeminiWave awards and endorsement. No aggregate contract-dollar claim, funding guarantee, active-clearance claim, or new client outcome is published. New calls to action select the matching inquiry topic; nothing is sent automatically.
+
+## Simulation and medical-device experience
+
+The FEM section separates analysis tools, selected historical applications, and original presentation figures. ANSYS thermal work is documented in the founder’s 2004–2005 role; subsequent examples span MEMS, SiC, wearable thermal hardware, and Integra field-failure investigation. COMSOL and Ansoft/HFSS are described as background/exposure, not equal-depth expertise. The Abbott JETi case describes verification, qualification, testing, and EU MDR support; it does not attribute FDA clearance to the founder or claim JETi-specific FEM work. A third-party résumé supplied as a writing reference is not used as evidence of the founder’s skills or employment.
+
+AR/VR and wearable-sensing copy separates technology assessment and proposal development from funded or deployed results. Career evidence establishes AR/VR assessment by 2013; the user’s stated 2012 start and SEAL-specific assignment are not yet independently dated in the reviewed records and are not published. Partner AI/ML contributions are not represented as sole-founder implementation. Air Force collaboration is described as cooperative research planning because an available draft alone does not establish an executed agreement.
