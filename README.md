@@ -11,3 +11,7 @@ Professional experience reflects prior employment and contract roles, not a clie
 The existing `apps/`, `legal/`, `style.css`, and `CNAME` are retained for legacy destinations. The new consulting privacy page is `privacy.html`. The private business plan, revenue targets, Gmail evidence, and contact research are not part of this public repository.
 
 Validation: `node --check app.js`; check navigation, experience tabs and keyboard controls, inquiry validation/message preparation, and desktop/mobile layout. `robots.txt` and `sitemap.xml` declare the public canonical domain.
+
+## Historical engineering gallery
+
+Three unchanged embedded PNG figures are reproduced from Faheem Faheem's `High Volume Manufacturing for MEMS Packaging.pptx`, slides 20, 23, and 29. They also appear in his 2021 electronic-packaging presentation. The gallery identifies them as historical presentation figures, retains original labels, and makes no new client outcome or sole-authorship claim. Selected image/layout/master content was reviewed for confidentiality markings. Restricted sections of other decks are not included.
