@@ -30,7 +30,7 @@ document.querySelector('#intake').addEventListener('submit',e=>{
   const data=new FormData(e.currentTarget);
   const company=String(data.get('company')).trim();
   const subject='GeminiWave project fit call'+(company?' — '+company:'');
-  const body='Hello Faheem,\n\nI would like to request a 20-minute project fit call.\n\nName: '+data.get('name')+(company?'\nCompany: '+company:'')+'\nEmail: '+data.get('email')+'\nEngagement: '+data.get('service')+'\nTarget timing: '+data.get('timing')+'\n\nChallenge / milestone:\n'+data.get('challenge')+'\n\nPlease let me know a suitable time to talk.\n\nThank you,\n'+data.get('name');
+  const body='Hello Faheem,\n\nI would like to request a 20-minute project fit call.\n\nName: '+data.get('name')+(company?'\nCompany: '+company:'')+'\nEmail: '+data.get('email')+'\nEngagement: '+data.get('service')+'\nTarget timing: '+data.get('timing')+'\nFound GeminiWave via: '+data.get('source')+'\n\nChallenge / milestone:\n'+data.get('challenge')+'\n\nPlease let me know a suitable time to talk.\n\nThank you,\n'+data.get('name');
   document.querySelector('#prepared-message').value=body;
   document.querySelector('#email-inquiry').href='mailto:ffaheem@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
   document.querySelector('#inquiry-preview').hidden=false;
@@ -47,3 +47,11 @@ document.querySelector('#copy-inquiry').addEventListener('click',async()=>{
     document.querySelector('#inquiry-status').textContent='Select and copy the message above, then email ffaheem@gmail.com.';
   }
 });
+
+document.querySelectorAll('[data-show-case]').forEach(link=>link.addEventListener('click',()=>{
+  const button=tabs.find(tab=>tab.dataset.case===link.dataset.showCase);
+  if(button)showCase(button);
+}));
+const campaignSource=new URLSearchParams(window.location.search).get('utm_source');
+const knownSources={linkedin:'LinkedIn',readiness_guide:'Other',warm_outreach:'Colleague / referral',google_business:'Google Search / Maps'};
+if(knownSources[campaignSource])document.querySelector('#lead-source').value=knownSources[campaignSource];
