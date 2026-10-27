@@ -29,3 +29,10 @@ AR/VR and wearable-sensing copy separates technology assessment and proposal dev
 ## New England consulting launch
 
 The October 24 launch adds a generated conceptual centerpiece, four accessible HTML consulting paths, a public engineering-readiness checklist, New England remote service context, and updated Organization/Person/Service structured data. No private street address, business hours, reviews, Maps listing, or search-ranking promise is invented. Images are conceptual; historical FEM figures retain their original provenance. OAI-SearchBot is explicitly allowed; existing general crawler access remains unchanged. The inquiry helper includes a voluntary discovery-source field and recognizes a small list of campaign source labels in the current URL. There is no analytics beacon, cookie, lead database, automated sending, or booked appointment. Google Business Profile and Search Console verification remain separate account steps.
+
+
+## Medical-device and human-systems cases
+
+`cases.html` provides five direct-link case studies: JETi verification (`#jeti`), HSI wearable development (`#hsi`), Foster-Miller/QinetiQ prosthetic interfaces (`#prosthetics`), collaborative VR rehabilitation (`#vr`), and an independent ECG data-analysis prototype (`#ecg`). The homepage and sitemap link this page. It uses the existing design system plus `cases.css`, and needs no JavaScript.
+
+The summaries reflect the founder's career record and reviewed correspondence, with his confirmation that the VR work addressed phantom-limb pain for above-knee amputees. The public page contains no private emails, subject data, test results, proprietary designs or internal attachments. The ECG repository contains serial collection, CSV processing, Isolation Forest and plotting scripts; it is described as a prototype without diagnostic validation. No clinical efficacy, quantified pain reduction, IEC 62366 or IEC 60601-1-6 expertise, or formal usability-study leadership is inferred.

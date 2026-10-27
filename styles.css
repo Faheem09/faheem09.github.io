@@ -45,3 +45,7 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 
 @media(max-width:760px){.launch-intro h1{font-size:clamp(31px,9.4vw,39px)}.site-header nav>a:not(.nav-cta){display:block}}
+
+
+/* Human-systems case-study introduction */
+.human-case-preview{background:#e7efe4;border-bottom:1px solid #c5d4c4}.human-case-preview .section{padding-block:65px}.human-case-links{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;margin-bottom:28px}.human-case-links a{border-top:3px solid #5d9290;padding:21px 22px;background:#f5f7f0}.human-case-links a:nth-child(2){border-color:#ad7653}.human-case-links a:nth-child(3){border-color:#8973a9}.human-case-links a:hover{background:#fffdf8}.human-case-links span{display:block;font-size:10px;letter-spacing:1.3px;color:var(--muted)}.human-case-links strong{display:block;font:600 21px/1.35 'Manrope',Arial,sans-serif;margin-top:11px}.human-case-links p{font-size:14px;color:var(--muted);margin-bottom:0}@media(max-width:760px){.human-case-links{grid-template-columns:1fr;gap:15px}.human-case-preview .section{padding-block:45px}}
